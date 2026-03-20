@@ -24,7 +24,7 @@
   .nav-right { display: flex; align-items: center; gap: 16px; }
   .nav-link { font-size: 13.5px; color: var(--mid); text-decoration: none; font-weight: 500; transition: color 0.15s; }
   .nav-link:hover { color: var(--teal); }
-  .nav-cta { display: inline-flex; align-items: center; gap: 7px; padding: 9px 20px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; text-decoration: none; border-radius: 8px; font-size: 13.5px; font-weight: 600; transition: all 0.2s; }
+  .nav-cta { display: inline-flex; align-items: center; gap: 7px; padding: 9px 20px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; text-decoration: none; border-radius: 8px; font-size: 13.5px; font-weight: 600; transition: all 0.2s; cursor: pointer; border: none; font-family: 'DM Sans', sans-serif; }
   .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(46,125,148,0.35); }
 
   /* HERO */
@@ -43,7 +43,7 @@
   .hero-sub strong { color: var(--charcoal); font-weight: 600; }
 
   .hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 44px; }
-  .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 15px 28px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; text-decoration: none; border-radius: 10px; font-size: 15px; font-weight: 600; transition: all 0.2s; box-shadow: 0 4px 20px rgba(46,125,148,0.3); }
+  .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 15px 28px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; text-decoration: none; border-radius: 10px; font-size: 15px; font-weight: 600; transition: all 0.2s; box-shadow: 0 4px 20px rgba(46,125,148,0.3); cursor: pointer; border: none; font-family: 'DM Sans', sans-serif; }
   .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(46,125,148,0.4); }
   .btn-secondary { display: inline-flex; align-items: center; gap: 6px; padding: 15px 24px; background: transparent; color: var(--mid); text-decoration: none; border-radius: 10px; font-size: 15px; font-weight: 500; transition: all 0.2s; border: 1.5px solid var(--border); }
   .btn-secondary:hover { border-color: var(--teal-light); color: var(--teal); background: var(--teal-pale); }
@@ -158,8 +158,9 @@
   .pricing-features { list-style: none; margin-bottom: 28px; }
   .pricing-features li { display: flex; align-items: center; gap: 9px; font-size: 13.5px; color: var(--mid); padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.04); }
   .pricing-features li::before { content: '✓'; color: var(--teal); font-weight: 700; flex-shrink: 0; }
-  .pricing-btn { display: block; width: 100%; padding: 13px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; text-decoration: none; border-radius: 10px; font-size: 14px; font-weight: 600; text-align: center; transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
+  .pricing-btn { display: block; width: 100%; padding: 13px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; text-align: center; transition: all 0.2s; font-family: 'DM Sans', sans-serif; cursor: pointer; }
   .pricing-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(46,125,148,0.35); }
+  .pricing-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
   .pricing-btn.outline { background: white; color: var(--teal); border: 2px solid var(--teal); }
   .pricing-btn.outline:hover { background: var(--teal-pale); box-shadow: none; }
   .pricing-note { text-align: center; margin-top: 20px; font-size: 12.5px; color: var(--light); }
@@ -170,8 +171,9 @@
   .cta-inner { max-width: 600px; margin: 0 auto; position: relative; z-index: 1; }
   .cta-section h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(30px, 4vw, 46px); font-weight: 700; color: white; margin-bottom: 16px; line-height: 1.2; }
   .cta-section p { font-size: 16px; color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 36px; }
-  .cta-btn { display: inline-flex; align-items: center; gap: 9px; padding: 16px 36px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; text-decoration: none; border-radius: 12px; font-size: 16px; font-weight: 600; transition: all 0.2s; box-shadow: 0 8px 32px rgba(46,125,148,0.4); }
+  .cta-btn { display: inline-flex; align-items: center; gap: 9px; padding: 16px 36px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; border: none; border-radius: 12px; font-size: 16px; font-weight: 600; transition: all 0.2s; box-shadow: 0 8px 32px rgba(46,125,148,0.4); cursor: pointer; font-family: 'DM Sans', sans-serif; }
   .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(46,125,148,0.5); }
+  .cta-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
   .cta-fine { margin-top: 18px; font-size: 12.5px; color: rgba(255,255,255,0.3); }
 
   /* FOOTER */
@@ -217,7 +219,7 @@
     <a href="#features" class="nav-link">Features</a>
     <a href="#pricing" class="nav-link">Pricing</a>
     <a href="#steve" class="nav-link">About</a>
-    <a href="https://app.yourhrcoach.ai" class="nav-cta">Start Free Trial →</a>
+    <button onclick="startCheckout('monthly')" class="nav-cta">Start Free Trial →</button>
   </div>
 </nav>
 
@@ -232,7 +234,7 @@
         <strong>Your HR Coach gives you 40 years of expert HR guidance instantly</strong> — without the retainer, the wait, or the risk.
       </p>
       <div class="hero-actions">
-        <a href="https://app.yourhrcoach.ai" class="btn-primary">Start Your Free Trial →</a>
+        <button onclick="startCheckout('monthly')" class="btn-primary">Start Your Free Trial →</button>
         <a href="#how" class="btn-secondary">See How It Works</a>
       </div>
       <div class="hero-trust">
@@ -453,7 +455,7 @@
           <li>Available 24/7</li>
           <li>Cancel anytime</li>
         </ul>
-        <a href="https://app.yourhrcoach.ai" class="pricing-btn outline">Start Free Trial</a>
+        <button onclick="startCheckout('monthly')" class="pricing-btn outline">Start Free Trial</button>
       </div>
       <div class="pricing-card featured fade-up">
         <div class="featured-badge">⭐ Best Value</div>
@@ -468,7 +470,7 @@
           <li>Conversation history</li>
           <li>Priority support</li>
         </ul>
-        <a href="https://app.yourhrcoach.ai" class="pricing-btn">Start Free Trial →</a>
+        <button onclick="startCheckout('annual')" class="pricing-btn">Start Free Trial →</button>
       </div>
     </div>
     <p class="pricing-note">7-day free trial on all plans · Secure payment via Stripe · Cancel anytime · Have a coupon? Enter it at checkout.</p>
@@ -480,7 +482,7 @@
   <div class="cta-inner">
     <h2>Don't Wait for a Crisis to Get Help.</h2>
     <p>The best time to have an HR expert on your side is before you need one. Start your free trial today and protect your business, your people, and your reputation.</p>
-    <a href="https://app.yourhrcoach.ai" class="cta-btn">Start Your Free Trial →</a>
+    <button onclick="startCheckout('monthly')" class="cta-btn">Start Your Free Trial →</button>
     <div class="cta-fine">7-day free trial · No commitment · Cancel anytime</div>
   </div>
 </section>
@@ -500,10 +502,52 @@
 </footer>
 
 <script>
+  // Fade-up animation
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(el => { if (el.isIntersecting) { el.target.classList.add('visible'); observer.unobserve(el.target); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Stripe checkout
+  async function startCheckout(priceType) {
+    const btns = document.querySelectorAll('button');
+    btns.forEach(b => { b.disabled = true; });
+
+    const originalTexts = [];
+    btns.forEach(b => {
+      originalTexts.push(b.textContent);
+      if (b.textContent.includes('Free Trial') || b.textContent.includes('→')) {
+        b.textContent = 'Loading...';
+      }
+    });
+
+    try {
+      const response = await fetch('/.netlify/functions/stripe-checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          priceId: priceType === 'monthly'
+            ? 'price_1TBokEKWo0owFA1YB09bQhdh'
+            : 'price_1TBokkKWo0owFA1YASWyxhtC'
+        })
+      });
+
+      const data = await response.json();
+
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        throw new Error('No checkout URL returned');
+      }
+    } catch (err) {
+      console.error('Checkout error:', err);
+      alert('Something went wrong starting checkout. Please try again.');
+      btns.forEach((b, i) => {
+        b.disabled = false;
+        b.textContent = originalTexts[i];
+      });
+    }
+  }
 </script>
 </body>
 </html>
