@@ -219,7 +219,7 @@
     <a href="#features" class="nav-link">Features</a>
     <a href="#pricing" class="nav-link">Pricing</a>
     <a href="#steve" class="nav-link">About</a>
-    <button onclick="startCheckout('monthly')" class="nav-cta">Start Free Trial →</button>
+    <a href="https://app.yourhrcoach.ai" class="nav-cta">Start Free Trial →</a>
   </div>
 </nav>
 
@@ -234,7 +234,7 @@
         <strong>Your HR Coach gives you 40 years of expert HR guidance instantly</strong> — without the retainer, the wait, or the risk.
       </p>
       <div class="hero-actions">
-        <button onclick="startCheckout('monthly')" class="btn-primary">Start Your Free Trial →</button>
+        <a href="https://app.yourhrcoach.ai" class="btn-primary">Start Your Free Trial →</a>
         <a href="#how" class="btn-secondary">See How It Works</a>
       </div>
       <div class="hero-trust">
@@ -455,7 +455,7 @@
           <li>Available 24/7</li>
           <li>Cancel anytime</li>
         </ul>
-        <button onclick="startCheckout('monthly')" class="pricing-btn outline">Start Free Trial</button>
+        <a href="https://app.yourhrcoach.ai" class="pricing-btn outline">Start Free Trial</a>
       </div>
       <div class="pricing-card featured fade-up">
         <div class="featured-badge">⭐ Best Value</div>
@@ -470,7 +470,7 @@
           <li>Conversation history</li>
           <li>Priority support</li>
         </ul>
-        <button onclick="startCheckout('annual')" class="pricing-btn">Start Free Trial →</button>
+        <a href="https://app.yourhrcoach.ai" class="pricing-btn">Start Free Trial →</a>
       </div>
     </div>
     <p class="pricing-note">7-day free trial on all plans · Secure payment via Stripe · Cancel anytime · Have a coupon? Enter it at checkout.</p>
@@ -482,7 +482,7 @@
   <div class="cta-inner">
     <h2>Don't Wait for a Crisis to Get Help.</h2>
     <p>The best time to have an HR expert on your side is before you need one. Start your free trial today and protect your business, your people, and your reputation.</p>
-    <button onclick="startCheckout('monthly')" class="cta-btn">Start Your Free Trial →</button>
+    <a href="https://app.yourhrcoach.ai" class="cta-btn">Start Your Free Trial →</a>
     <div class="cta-fine">7-day free trial · No commitment · Cancel anytime</div>
   </div>
 </section>
@@ -507,19 +507,7 @@
     entries.forEach(el => { if (el.isIntersecting) { el.target.classList.add('visible'); observer.unobserve(el.target); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-  // Stripe checkout
-  async function startCheckout(priceType) {
-    const btns = document.querySelectorAll('button');
-    btns.forEach(b => { b.disabled = true; });
-
-    const originalTexts = [];
-    btns.forEach(b => {
-      originalTexts.push(b.textContent);
-      if (b.textContent.includes('Free Trial') || b.textContent.includes('→')) {
-        b.textContent = 'Loading...';
-      }
-    });
+);
 
     try {
       const response = await fetch('/.netlify/functions/stripe-checkout', {
