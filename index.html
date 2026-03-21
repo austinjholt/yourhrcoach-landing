@@ -8,8 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --teal: #2e7d94; --teal-dark: #1e5f73; --teal-light: #4a9db5; --teal-pale: #e8f4f8;
-    --olive: #6b7c3f; --charcoal: #1a1a2e; --mid: #4a5568; --light: #a0aec0;
+    --teal: #4a9e6b; --teal-dark: #357a52; --teal-light: #6abf85; --teal-pale: #eaf7ef;
+    --olive: #5cb85c; --charcoal: #495459; --mid: #4a5568; --light: #a0aec0;
     --bg: #f7f9fa; --white: #ffffff; --border: #e2e8f0; --gold: #c9a84c;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -19,8 +19,9 @@
   /* NAV */
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.06); }
   .nav-logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
-  .nav-logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); border-radius: 9px; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-weight: 700; color: white; font-size: 15px; }
-  .nav-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 700; color: var(--teal-dark); }
+  .nav-logo-icon { width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: white; }
+  .nav-logo-icon svg { width: 30px; height: 30px; }
+  .nav-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 700; color: #495459; }
   .nav-right { display: flex; align-items: center; gap: 16px; }
   .nav-link { font-size: 13.5px; color: var(--mid); text-decoration: none; font-weight: 500; transition: color 0.15s; }
   .nav-link:hover { color: var(--teal); }
@@ -28,7 +29,7 @@
   .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(46,125,148,0.35); }
 
   /* HERO */
-  .hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 40px 80px; position: relative; overflow: hidden; background: linear-gradient(160deg, #f0f7fa 0%, #ffffff 50%, #f7f9f0 100%); }
+  .hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 40px 80px; position: relative; overflow: hidden; background: linear-gradient(160deg, #f0faf4 0%, #ffffff 50%, #f7faf0 100%); }
   .hero::before { content: ''; position: absolute; top: -200px; right: -200px; width: 700px; height: 700px; background: radial-gradient(circle, rgba(46,125,148,0.07) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
   .hero-inner { max-width: 1100px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; z-index: 1; }
 
@@ -179,7 +180,8 @@
   /* FOOTER */
   footer { padding: 32px 40px; background: #111; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
   .footer-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
-  .footer-logo-icon { width: 28px; height: 28px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); border-radius: 7px; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-weight: 700; color: white; font-size: 12px; }
+  .footer-logo-icon { width: 28px; height: 28px; border-radius: 7px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: white; }
+  .footer-logo-icon svg { width: 22px; height: 22px; }
   .footer-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.6); }
   .footer-links { display: flex; gap: 24px; }
   .footer-links a { font-size: 12.5px; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.15s; }
@@ -212,8 +214,8 @@
 <!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">
-    <div class="nav-logo-icon">HR</div>
-    <span class="nav-logo-text">Your HR Coach</span>
+    <div class="nav-logo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="5" y="5" width="42" height="42" rx="8" fill="#7bc9a0"/><rect x="53" y="5" width="42" height="42" rx="8" fill="#5cb85c"/><rect x="5" y="53" width="42" height="42" rx="8" fill="#5cb85c"/><rect x="53" y="53" width="42" height="42" rx="8" fill="#7bc9a0"/></svg></div>
+    <span class="nav-logo-text">YourHRCoach.ai</span>
   </a>
   <div class="nav-right">
     <a href="#features" class="nav-link">Features</a>
@@ -250,7 +252,7 @@
     <div class="hero-visual">
       <div class="hero-card">
         <div class="card-header">
-          <div class="card-header-icon">HR</div>
+          <div class="card-header-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="5" y="5" width="42" height="42" rx="8" fill="rgba(255,255,255,0.7)"/><rect x="53" y="5" width="42" height="42" rx="8" fill="rgba(255,255,255,0.9)"/><rect x="5" y="53" width="42" height="42" rx="8" fill="rgba(255,255,255,0.9)"/><rect x="53" y="53" width="42" height="42" rx="8" fill="rgba(255,255,255,0.7)"/></svg></div>
           <div class="card-header-text">
             <strong>Your HR Coach</strong>
             <span>Powered by Dr. Steve Cohen</span>
@@ -490,8 +492,8 @@
 <!-- FOOTER -->
 <footer>
   <a href="/" class="footer-logo">
-    <div class="footer-logo-icon">HR</div>
-    <span class="footer-logo-text">Your HR Coach</span>
+    <div class="footer-logo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="5" y="5" width="42" height="42" rx="8" fill="#7bc9a0"/><rect x="53" y="5" width="42" height="42" rx="8" fill="#5cb85c"/><rect x="5" y="53" width="42" height="42" rx="8" fill="#5cb85c"/><rect x="53" y="53" width="42" height="42" rx="8" fill="#7bc9a0"/></svg></div>
+    <span class="footer-logo-text">YourHRCoach.ai</span>
   </a>
   <div class="footer-links">
     <a href="https://app.yourhrcoach.ai">Sign In</a>
