@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Write a Termination Letter for Small Business (With Templates) | YourHRCoach.ai</title>
+  <meta name="description" content="Learn how to write a professional termination letter that protects your business. Includes templates, key elements, and expert guidance from Dr. Steve Cohen." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourhrcoach.ai/resources/termination-letter" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green-dark:   #357a52;
+      --green-main:   #4a9e6b;
+      --green-light:  #7bc9a0;
+      --green-pale:   #edf7f1;
+      --text-dark:    #1a1a1a;
+      --text-mid:     #444;
+      --text-light:   #777;
+      --border:       #d8ede2;
+      --white:        #ffffff;
+      --max:          740px;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--text-dark);
+      background: var(--white);
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      height: 64px;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: 17px;
+      color: var(--green-dark);
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-mid);
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .nav-cta {
+      background: var(--green-main);
+      color: var(--white) !important;
+      padding: 9px 20px;
+      border-radius: 6px;
+      font-size: 14px !important;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--green-dark) !important; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--green-pale);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 24px 56px;
+      text-align: center;
+    }
+    .hero .breadcrumb {
+      font-size: 13px;
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
+    .hero .breadcrumb a { color: var(--green-main); text-decoration: none; }
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.2;
+      color: var(--text-dark);
+      max-width: 700px;
+      margin: 0 auto 18px;
+    }
+    .hero .subtitle {
+      font-size: 18px;
+      color: var(--text-mid);
+      max-width: 580px;
+      margin: 0 auto 28px;
+    }
+    .hero .meta {
+      font-size: 13px;
+      color: var(--text-light);
+    }
+
+    /* ── LAYOUT ── */
+    .content-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 26px;
+      color: var(--text-dark);
+      margin: 48px 0 14px;
+      padding-top: 8px;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin: 32px 0 10px;
+    }
+    p { margin-bottom: 18px; color: var(--text-mid); }
+    ul, ol { padding-left: 22px; margin-bottom: 18px; color: var(--text-mid); }
+    li { margin-bottom: 8px; }
+    strong { color: var(--text-dark); font-weight: 600; }
+
+    /* ── CALLOUT BOXES ── */
+    .callout {
+      border-left: 4px solid var(--green-main);
+      background: var(--green-pale);
+      padding: 18px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 28px 0;
+    }
+    .callout.warning {
+      border-left-color: #e07b3a;
+      background: #fff8f3;
+    }
+    .callout p { margin: 0; color: var(--text-dark); font-size: 15px; }
+    .callout strong { color: var(--green-dark); }
+    .callout.warning strong { color: #c05f20; }
+
+    /* ── TEMPLATE BOX ── */
+    .template-box {
+      background: #f7f7f7;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 28px 28px 20px;
+      margin: 28px 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-dark);
+    }
+    .template-box .template-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
+    .template-box p { color: var(--text-dark); margin-bottom: 14px; }
+    .template-box .placeholder {
+      background: #dff0e8;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-style: italic;
+      color: var(--green-dark);
+    }
+
+    /* ── CHECKLIST ── */
+    .checklist { list-style: none; padding: 0; }
+    .checklist li {
+      padding: 10px 0 10px 32px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      color: var(--text-mid);
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before {
+      content: '✓';
+      position: absolute;
+      left: 4px;
+      color: var(--green-main);
+      font-weight: 700;
+    }
+
+    /* ── CTA BLOCK ── */
+    .cta-block {
+      background: var(--green-dark);
+      border-radius: 12px;
+      padding: 40px 32px;
+      text-align: center;
+      margin: 52px 0;
+    }
+    .cta-block h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 24px;
+      color: var(--white);
+      margin: 0 0 10px;
+      font-weight: 400;
+    }
+    .cta-block p {
+      color: rgba(255,255,255,0.8);
+      font-size: 15px;
+      margin: 0 0 22px;
+    }
+    .cta-block a {
+      display: inline-block;
+      background: var(--white);
+      color: var(--green-dark);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 13px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .cta-block a:hover { opacity: 0.9; }
+    .cta-block .sub {
+      margin-top: 14px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* ── AUTHOR BLOCK ── */
+    .author-block {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: var(--green-pale);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      margin: 48px 0;
+    }
+    .author-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--green-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .author-info h4 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+    .author-info p { font-size: 14px; margin: 0; color: var(--text-light); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-light);
+    }
+    footer a { color: var(--green-main); text-decoration: none; margin: 0 10px; }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 16px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .content-wrap { padding: 40px 18px 60px; }
+      .cta-block { padding: 28px 20px; }
+      .author-block { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="https://yourhrcoach.ai" class="nav-logo">YourHRCoach.ai</a>
+  <div class="nav-links">
+    <a href="https://yourhrcoach.ai/resources">Resources</a>
+    <a href="https://yourhrcoach.ai/#pricing">Pricing</a>
+    <a href="https://app.yourhrcoach.ai" class="nav-cta">Start Free Trial →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="breadcrumb">
+    <a href="https://yourhrcoach.ai">Home</a> &rsaquo;
+    <a href="https://yourhrcoach.ai/resources">Resources</a> &rsaquo;
+    Termination Letter
+  </div>
+  <h1>How to Write a Termination Letter for Small Business</h1>
+  <p class="subtitle">A step-by-step guide — with templates — to protect your business when ending employment.</p>
+  <p class="meta">By Dr. Steve Cohen &nbsp;·&nbsp; HR Solutions On Call &nbsp;·&nbsp; 12 min read</p>
+</div>
+
+<!-- CONTENT -->
+<div class="content-wrap">
+
+  <p>Terminating an employee is one of the most legally sensitive things a small business owner can do. A poorly written termination letter — or no letter at all — can turn a straightforward firing into a wrongful termination lawsuit that costs you $40,000 or more to defend, even if you win.</p>
+
+  <p>After 40 years of HR consulting, I've seen more terminations go sideways than I can count. Almost all of them shared one thing in common: the business owner didn't document correctly. This guide will show you exactly what to include, what to avoid, and give you a template you can adapt immediately.</p>
+
+  <div class="callout">
+    <p><strong>Quick note:</strong> A termination letter is not a substitute for legal counsel in complex situations — harassment investigations, EEOC complaints, or ADA-related terminations. When in doubt, consult an employment attorney before you act.</p>
+  </div>
+
+  <h2>Why a Termination Letter Matters</h2>
+
+  <p>Most small business owners skip the termination letter entirely, or they write something vague and emotional in the heat of the moment. Both are mistakes.</p>
+
+  <p>A well-written termination letter does three things:</p>
+  <ul>
+    <li><strong>Creates a paper trail</strong> that documents your business reason for the termination</li>
+    <li><strong>Reduces ambiguity</strong> — the employee knows exactly why they were let go and what happens next</li>
+    <li><strong>Protects you legally</strong> if the termination is later challenged at an unemployment hearing or in court</li>
+  </ul>
+
+  <p>In an at-will state, you generally don't need a reason to terminate someone — but you do need to make sure your reason wasn't illegal (discrimination, retaliation, protected activity). A clear, documented business reason is your defense.</p>
+
+  <h2>What to Include in a Termination Letter</h2>
+
+  <p>Keep it professional, factual, and brief. This is not the place to vent, over-explain, or litigate the past six months of performance issues. Include only what's necessary.</p>
+
+  <ul class="checklist">
+    <li>The employee's full name, title, and department</li>
+    <li>The effective date of termination (be specific — "today" is not a date)</li>
+    <li>A clear, neutral statement that employment is ending</li>
+    <li>A brief, factual reason (if applicable) — one or two sentences maximum</li>
+    <li>Final paycheck details — when and how they'll receive it</li>
+    <li>Information about benefits continuation (COBRA, if applicable)</li>
+    <li>Return of company property — keys, equipment, access cards</li>
+    <li>Confidentiality and non-compete reminders (if they signed one)</li>
+    <li>Who to contact with questions</li>
+  </ul>
+
+  <div class="callout warning">
+    <p><strong>What NOT to include:</strong> Emotional language, detailed accusations, admissions of any kind, or anything you'd be embarrassed to see in court. If you find yourself writing more than a page, stop and simplify.</p>
+  </div>
+
+  <h2>Termination Letter Template — For-Cause Termination</h2>
+
+  <p>Use this when you're terminating for a documented performance or conduct reason.</p>
+
+  <div class="template-box">
+    <div class="template-label">Template — For-Cause Termination</div>
+    <p><span class="placeholder">[Date]</span></p>
+    <p><span class="placeholder">[Employee Full Name]</span><br>
+    <span class="placeholder">[Job Title]</span><br>
+    <span class="placeholder">[Department]</span></p>
+
+    <p>Dear <span class="placeholder">[Employee First Name]</span>,</p>
+
+    <p>This letter serves as formal notice that your employment with <span class="placeholder">[Company Name]</span> is terminated effective <span class="placeholder">[Termination Date]</span>.</p>
+
+    <p>This decision follows <span class="placeholder">[brief factual reason — e.g., "repeated violations of our attendance policy after two written warnings on [dates]" or "the performance deficiencies documented in your Performance Improvement Plan dated [date]"]</span>.</p>
+
+    <p>Your final paycheck, covering wages through <span class="placeholder">[last day of work]</span>, will be <span class="placeholder">[mailed to your address on file / available for pickup / direct deposited]</span> on <span class="placeholder">[date]</span>. Information regarding COBRA continuation coverage will be mailed to your home address separately.</p>
+
+    <p>Please return all company property — including <span class="placeholder">[keys, laptop, access badge, etc.]</span> — by <span class="placeholder">[date/time]</span>. Your system access will be deactivated at the close of business today.</p>
+
+    <p>If you have questions about your final pay or benefits, please contact <span class="placeholder">[HR contact name and email]</span>.</p>
+
+    <p>We wish you well in your future endeavors.</p>
+
+    <p>Sincerely,</p>
+    <p><span class="placeholder">[Your Name]</span><br>
+    <span class="placeholder">[Your Title]</span><br>
+    <span class="placeholder">[Company Name]</span></p>
+  </div>
+
+  <h2>Termination Letter Template — Layoff / Position Elimination</h2>
+
+  <p>Use this when the termination is not performance-related — a reduction in force, budget cut, or restructuring.</p>
+
+  <div class="template-box">
+    <div class="template-label">Template — Layoff / Position Elimination</div>
+    <p><span class="placeholder">[Date]</span></p>
+    <p><span class="placeholder">[Employee Full Name]</span><br>
+    <span class="placeholder">[Job Title]</span></p>
+
+    <p>Dear <span class="placeholder">[Employee First Name]</span>,</p>
+
+    <p>This letter is to inform you that your position as <span class="placeholder">[Job Title]</span> at <span class="placeholder">[Company Name]</span> is being eliminated effective <span class="placeholder">[Termination Date]</span>. This decision is the result of <span class="placeholder">[restructuring / a reduction in force / economic conditions]</span> and is not a reflection of your performance or contributions.</p>
+
+    <p>Your final paycheck, covering wages through <span class="placeholder">[last day]</span>, will be <span class="placeholder">[available / mailed / deposited]</span> on <span class="placeholder">[date]</span>. <span class="placeholder">[If applicable: You will also receive severance pay in the amount of $X, paid on [date], in exchange for signing the attached separation agreement.]</span></p>
+
+    <p>COBRA information will be mailed to your address on file. Please return all company property by <span class="placeholder">[date]</span>. Your system access will be deactivated at the close of business today.</p>
+
+    <p>We sincerely appreciate the work you've contributed to <span class="placeholder">[Company Name]</span> and wish you success going forward.</p>
+
+    <p>Sincerely,</p>
+    <p><span class="placeholder">[Your Name]</span><br>
+    <span class="placeholder">[Your Title]</span></p>
+  </div>
+
+  <div class="cta-block">
+    <h3>Need a Termination Letter Right Now?</h3>
+    <p>Your HR Coach generates professional, customized termination letters in seconds — powered by Dr. Steve Cohen's 40 years of HR expertise.</p>
+    <a href="https://app.yourhrcoach.ai">Generate Your Letter Free →</a>
+    <p class="sub">7-day free trial · No credit card required</p>
+  </div>
+
+  <h2>Common Mistakes Small Business Owners Make</h2>
+
+  <h3>1. Terminating verbally and not following up in writing</h3>
+  <p>A verbal termination with no written record is an invitation for "he said / she said" disputes. Always follow up with a letter, even if you've already had the conversation in person.</p>
+
+  <h3>2. Being too specific — or not specific enough</h3>
+  <p>Vague letters ("not a good fit") leave room for the employee to claim the real reason was discriminatory. Overly detailed letters that read like a trial brief create their own problems. Stick to one clear, factual, documented reason.</p>
+
+  <h3>3. Letting emotions into the letter</h3>
+  <p>Whatever happened between you and this employee — keep it out of the letter. Anything that sounds angry, personal, or vindictive will be used against you if this ends up in front of an employment attorney or unemployment judge.</p>
+
+  <h3>4. Getting the final paycheck wrong</h3>
+  <p>Final pay timing is governed by state law — and the rules vary significantly. In some states you must pay on the last day of work. In others you have a window. Get this wrong and you're looking at penalties on top of everything else.</p>
+
+  <h3>5. Skipping the conversation and just sending a letter</h3>
+  <p>The letter is documentation — it should follow a real conversation, not replace one. Have the termination meeting in person (or by video), then hand over or email the letter immediately after.</p>
+
+  <h2>Before You Send the Letter — A Quick Checklist</h2>
+
+  <ul class="checklist">
+    <li>Have you documented the performance or conduct issue that led to this termination?</li>
+    <li>If it's a for-cause termination, do you have prior written warnings on file?</li>
+    <li>Have you reviewed the employee's file for anything that could suggest a protected class issue?</li>
+    <li>Do you know your state's final paycheck law and deadline?</li>
+    <li>Have you revoked system access and collected company property?</li>
+    <li>Have you notified your payroll provider?</li>
+    <li>Have you consulted an employment attorney if there's anything unusual about this situation?</li>
+  </ul>
+
+  <div class="callout">
+    <p><strong>Pro tip from Dr. Steve:</strong> Have a witness present during the termination meeting — another manager or HR contact — and document who was in the room, what was said, and when the letter was delivered. That contemporaneous record matters.</p>
+  </div>
+
+  <h2>The Bottom Line</h2>
+
+  <p>A termination letter doesn't have to be complicated. It has to be <em>factual, timely, and documented</em>. Get those three things right and you've done most of the work to protect yourself legally.</p>
+
+  <p>If you're ever uncertain — about the reason, the timing, or whether a situation is legally risky — that's your signal to stop and get guidance before you act. One conversation with an HR expert before a termination is worth infinitely more than defending yourself after one.</p>
+
+  <!-- AUTHOR -->
+  <div class="author-block">
+    <div class="author-avatar">👤</div>
+    <div class="author-info">
+      <h4>Dr. Steve Cohen</h4>
+      <p>Founder, HR Solutions On Call · 40+ years of HR consulting experience helping small and mid-size businesses navigate their toughest HR challenges. YourHRCoach.ai is built on his expertise.</p>
+    </div>
+  </div>
+
+  <!-- BOTTOM CTA -->
+  <div class="cta-block">
+    <h3>Stop Guessing. Get Expert HR Guidance.</h3>
+    <p>Ask Your HR Coach any termination question and get a detailed, expert answer in seconds — or generate a customized termination letter ready to sign.</p>
+    <a href="https://app.yourhrcoach.ai">Start Your Free Trial →</a>
+    <p class="sub">7-day free trial · No commitment · Cancel anytime</p>
+  </div>
+
+  <p style="font-size:13px; color: var(--text-light); text-align:center;">
+    <em>This article is for general HR guidance purposes only and does not constitute legal advice. Employment laws vary by state. Consult a licensed employment attorney for guidance specific to your situation.</em>
+  </p>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p style="margin-bottom:10px;">
+    <a href="https://yourhrcoach.ai">Home</a>
+    <a href="https://yourhrcoach.ai/resources">Resources</a>
+    <a href="https://yourhrcoach.ai/#pricing">Pricing</a>
+    <a href="https://www.oncallhrgroup.com">HR Solutions On Call</a>
+    <a href="https://yourhrcoach.ai/privacy-policy">Privacy</a>
+  </p>
+  <p>© 2026 HR Solutions On Call · yourhrcoach.ai · HR guidance, not legal advice.</p>
+</footer>
+
+</body>
+</html>
