@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/resources"
+  to = "/resources/index.html"
+  status = 200
