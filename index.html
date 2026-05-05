@@ -69,6 +69,10 @@
   /* HERO CARD */
   .hero-visual { position: relative; }
   .hero-card { background: var(--white); border-radius: 20px; box-shadow: 0 24px 80px rgba(0,0,0,0.1); overflow: hidden; border: 1px solid var(--border); animation: floatCard 6s ease-in-out infinite; }
+  .hero-video-wrap { position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.13); border: 1px solid var(--border); background: #000; aspect-ratio: 16/9; width: 100%; }
+  .hero-video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 20px; }
+  .hero-video-label { text-align: center; margin-top: 14px; font-size: 13px; color: var(--mid); }
+  .hero-video-label strong { color: var(--charcoal); }
   @keyframes floatCard { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
   .card-header { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); padding: 16px 20px; display: flex; align-items: center; gap: 10px; }
   .card-header-icon { width: 32px; height: 32px; background: rgba(255,255,255,0.15); border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
@@ -211,6 +215,7 @@
     .hero { padding: 100px 20px 60px; }
     .hero-inner { grid-template-columns: 1fr; gap: 48px; }
     .hero-card { display: none; }
+    .hero-video-wrap { border-radius: 14px; }
     .world-first { padding: 20px; }
     .world-first p { font-size: 16px; }
     .pain, .features, .how, .authority, .pricing, .cta-section { padding: 70px 20px; }
@@ -263,36 +268,14 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="hero-card">
-        <div class="card-header">
-          <div class="card-header-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="5" y="5" width="42" height="42" rx="8" fill="rgba(255,255,255,0.8)"/><rect x="53" y="5" width="42" height="42" rx="8" fill="rgba(255,255,255,0.95)"/><rect x="5" y="53" width="42" height="42" rx="8" fill="rgba(255,255,255,0.95)"/><rect x="53" y="53" width="42" height="42" rx="8" fill="rgba(255,255,255,0.8)"/></svg></div>
-          <div class="card-header-text">
-            <strong>Your HR Coach</strong>
-            <span>Powered by Dr. Steve Cohen</span>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="chat-msg user">
-            <div class="chat-av user-av">👤</div>
-            <div>
-              <div class="chat-label">You</div>
-              <div class="chat-bubble">An employee threatened to sue us after termination. What do I do?</div>
-            </div>
-          </div>
-          <div class="chat-msg coach">
-            <div class="chat-av coach"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="5" y="5" width="42" height="42" rx="8" fill="rgba(255,255,255,0.7)"/><rect x="53" y="5" width="42" height="42" rx="8" fill="rgba(255,255,255,0.95)"/><rect x="5" y="53" width="42" height="42" rx="8" fill="rgba(255,255,255,0.95)"/><rect x="53" y="53" width="42" height="42" rx="8" fill="rgba(255,255,255,0.7)"/></svg></div>
-            <div>
-              <div class="chat-label">Your HR Coach</div>
-              <div class="chat-bubble">Don't panic — and don't contact them directly yet. First: document everything from the termination meeting, preserve all records, and loop in legal counsel before any further communication...</div>
-              <div class="rag-chip">📚 Answered using Dr. Steve Cohen's expertise</div>
-            </div>
-          </div>
-          <div class="chat-msg coach" style="margin-bottom:0">
-            <div class="chat-av coach"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="5" y="5" width="42" height="42" rx="8" fill="rgba(255,255,255,0.7)"/><rect x="53" y="5" width="42" height="42" rx="8" fill="rgba(255,255,255,0.95)"/><rect x="5" y="53" width="42" height="42" rx="8" fill="rgba(255,255,255,0.95)"/><rect x="53" y="53" width="42" height="42" rx="8" fill="rgba(255,255,255,0.7)"/></svg></div>
-            <div><div class="typing-dots"><div class="tdot"></div><div class="tdot"></div><div class="tdot"></div></div></div>
-          </div>
-        </div>
+      <div class="hero-video-wrap">
+        <iframe
+          src="https://player.vimeo.com/video/1189460157?badge=0&autopause=0&player_id=0&app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+          title="YourHRCoach.ai — Demo">
+        </iframe>
       </div>
+      <p class="hero-video-label"><strong>Dr. Steve Cohen</strong> walks you through the platform — 2 min</p>
     </div>
   </div>
 </section>
