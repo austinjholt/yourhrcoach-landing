@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+# Disable Pretty URLs to give us explicit control over trailing slashes
+# (Pretty URLs cause inconsistent trailing slash behavior between index.html
+#  files and named .html files, which confuses Google's indexer)
+[build.processing.html]
+  pretty_urls = false
