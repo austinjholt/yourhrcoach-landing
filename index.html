@@ -25,29 +25,33 @@
       "@id": "https://yourhrcoach.ai/#organization",
       "name": "Your HR Coach",
       "url": "https://yourhrcoach.ai",
+      "logo": "https://yourhrcoach.ai/Your%20HR%20Coach%20AI%20Logo.svg",
       "description": "AI-Powered HR Guidance for Small Business, powered by Dr. Steve Cohen's 40 years of expertise.",
       "founder": {
         "@type": "Person",
         "name": "Dr. Steve Cohen",
-        "jobTitle": "Founder",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "HR Solutions On Call",
-          "url": "https://www.oncallhrgroup.com"
-        }
+        "jobTitle": "Founder & HR Expert",
+        "description": "40+ years of HR consulting experience, 150+ publications"
       },
       "parentOrganization": {
         "@type": "Organization",
         "name": "HR Solutions On Call",
         "url": "https://www.oncallhrgroup.com"
-      }
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/yourhrcoach",
+        "https://www.facebook.com/profile.php?id=61578663583002",
+        "https://www.instagram.com/yourhrcoach.ai/"
+      ]
     },
     {
       "@type": "WebSite",
       "@id": "https://yourhrcoach.ai/#website",
       "url": "https://yourhrcoach.ai",
       "name": "Your HR Coach",
-      "publisher": { "@id": "https://yourhrcoach.ai/#organization" }
+      "publisher": {
+        "@id": "https://yourhrcoach.ai/#organization"
+      }
     },
     {
       "@type": "WebPage",
@@ -55,27 +59,94 @@
       "url": "https://yourhrcoach.ai/",
       "name": "Your HR Coach — AI-Powered HR Guidance for Small Business",
       "description": "Get instant HR guidance from Dr. Steve Cohen's 40 years of expertise. Generate termination letters, employee handbooks, job descriptions & more.",
-      "isPartOf": { "@id": "https://yourhrcoach.ai/#website" },
-      "about": { "@id": "https://yourhrcoach.ai/#organization" }
+      "isPartOf": {
+        "@id": "https://yourhrcoach.ai/#website"
+      },
+      "about": {
+        "@id": "https://yourhrcoach.ai/#organization"
+      }
     },
     {
       "@type": "SoftwareApplication",
       "name": "Your HR Coach",
       "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Human Resources",
       "operatingSystem": "Web",
       "url": "https://app.yourhrcoach.ai",
+      "description": "AI-powered HR guidance tool for small businesses. Get instant answers to HR questions, generate documents, and stay compliant — all backed by 40 years of real HR expertise.",
+      "featureList": [
+        "Instant HR guidance and answers",
+        "Termination letter generator",
+        "Employee handbook builder",
+        "Job description creator",
+        "HR compliance checker",
+        "Document upload and review",
+        "Performance review guidance"
+      ],
       "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "name": "7-Day Free Trial",
+          "description": "Full access for 7 days, no credit card required"
+        },
         {
           "@type": "Offer",
           "price": "99",
           "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "99",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M"
+          },
           "name": "Monthly Plan"
         },
         {
           "@type": "Offer",
           "price": "997",
           "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "997",
+            "priceCurrency": "USD",
+            "billingDuration": "P1Y"
+          },
           "name": "Annual Plan"
+        }
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Dr. Steve Cohen"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Your HR Coach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your HR Coach is an AI-powered HR guidance tool built on Dr. Steve Cohen's 40+ years of HR consulting expertise. It provides instant answers to HR questions, generates professional documents (termination letters, employee handbooks, job descriptions), and helps small businesses stay compliant — all for $99/month with a free 7-day trial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does HR help cost for a small business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Traditional HR consultants charge $150-300/hour. PEOs cost $100-200/employee/month. Your HR Coach provides expert HR guidance for $99/month (or $997/year) — accessible 24/7 with no per-question fees. Start with a free 7-day trial at yourhrcoach.ai."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need HR if I have fewer than 50 employees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Federal employment laws like FLSA, OSHA, and IRCA apply from your very first hire. At 15 employees, Title VII and ADA kick in. The risk of not having HR guidance isn't the size of your team — it's the cost of a single mistake. A wrongful termination lawsuit averages over $200,000."
+          }
         }
       ]
     }
