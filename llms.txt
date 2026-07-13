@@ -1,0 +1,46 @@
+# YourHRCoach.ai
+
+> AI-Powered HR Guidance for Small Business — built on Dr. Steve Cohen's 40+ years of HR consulting expertise.
+
+## What is YourHRCoach.ai?
+
+YourHRCoach.ai is an AI HR coaching platform designed for small business owners who need expert HR guidance without the cost of a full-time HR department or expensive retainer-based consulting. Every answer draws from Dr. Steve Cohen's 40+ years of real-world HR experience.
+
+## Core Features
+
+- **Instant HR Answers 24/7**: Ask any HR question — terminations, harassment complaints, performance issues, onboarding — and get expert guidance instantly.
+- **Document Generation**: Create termination letters, written warnings, job descriptions, offer letters, HR policies, and performance reviews — downloadable as Word documents.
+- **Upload & Review Documents**: Upload existing HR documents for expert feedback, rewrites, and improvements.
+- **Conversation History**: All conversations saved and searchable.
+- **Private & Secure**: Conversations are private to each account.
+
+## Pricing
+
+- Monthly: $99/month (after 7-day free trial)
+- Annual: $997/year (save $191 — 2 months free)
+- 7-day free trial on all plans
+
+## About the Expert
+
+Dr. Steve Cohen is the founder of HR Solutions On Call and has over 40 years of experience in HR consulting, helping organizations from 2 to 17,000 employees navigate complex HR situations. He has authored 150+ articles, chapters, and presentations on HR management topics.
+
+## Resources
+
+- [Homepage](https://yourhrcoach.ai/)
+- [HR Resources Hub](https://yourhrcoach.ai/resources/)
+- [How to Write a Termination Letter](https://yourhrcoach.ai/resources/termination-letter)
+- [What to Include in an Employee Handbook](https://yourhrcoach.ai/resources/employee-handbook)
+- [How to Handle a Difficult Employee](https://yourhrcoach.ai/resources/difficult-employee)
+- [HR Compliance for Small Business](https://yourhrcoach.ai/resources/hr-compliance)
+- [Do I Need an HR Department?](https://yourhrcoach.ai/resources/hr-for-small-business)
+- [How to Write a Job Description](https://yourhrcoach.ai/resources/job-description)
+- [The Real Cost of Bad HR Decisions](https://yourhrcoach.ai/resources/hr-mistakes)
+- [Can AI Replace Your HR Department?](https://yourhrcoach.ai/resources/ai-hr-software)
+
+## Contact
+
+- Website: https://yourhrcoach.ai
+- Parent Company: HR Solutions On Call (https://oncallhrgroup.com)
+- Email: info@oncallhrgroup.com
+- Phone: 816.600.4215
+- Location: Lee's Summit, MO
