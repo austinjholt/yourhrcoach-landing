@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
 Sitemap: https://yourhrcoach.ai/sitemap.xml
+
+# AI search engine content file
+# See https://llmstxt.org for specification
+# LLMs-Txt: https://yourhrcoach.ai/llms.txt
