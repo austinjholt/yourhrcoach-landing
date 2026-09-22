@@ -436,6 +436,18 @@ src="https://www.facebook.com/tr?id=1471431344275677&ev=PageView&noscript=1"
     footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
   }
 </style>
+<!-- HeyCatch analytics -->
+<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
+  analytics.init({
+    projectKey: 'hck_pk_bwfdUN-1i4f1WTSMAXe-XVZes5T1nk6a',
+    install: {
+      framework: 'web',
+      agent: 'other',
+    },
+    requestBatching: false,
+  });
+</script>
 </head>
 <body>
 
