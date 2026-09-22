@@ -192,6 +192,18 @@ src="https://www.facebook.com/tr?id=1471431344275677&ev=PageView&noscript=1"
   .footer-copy { font-size: 12.5px; color: var(--light); }
   @media (max-width: 860px) { .pricing-cards { grid-template-columns: 1fr; } main { padding: 110px 20px 20px; } nav { padding: 14px 20px; } .nav-link { display: none; } }
 </style>
+<!-- HeyCatch analytics -->
+<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
+  analytics.init({
+    projectKey: 'hck_pk_bwfdUN-1i4f1WTSMAXe-XVZes5T1nk6a',
+    install: {
+      framework: 'web',
+      agent: 'other',
+    },
+    requestBatching: false,
+  });
+</script>
 </head>
 <body>
 <nav>

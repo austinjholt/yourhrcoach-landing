@@ -165,6 +165,18 @@ src="https://www.facebook.com/tr?id=1471431344275677&ev=PageView&noscript=1"
     footer a { color: var(--green-main); text-decoration: none; margin: 0 10px; }
     @media (max-width: 600px) { nav { padding: 0 16px; } .nav-links a:not(.nav-cta) { display: none; } .content-wrap { padding: 40px 18px 60px; } .two-col { grid-template-columns: 1fr; } .cta-block { padding: 28px 20px; } .author-block { flex-direction: column; } }
   </style>
+<!-- HeyCatch analytics -->
+<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
+  analytics.init({
+    projectKey: 'hck_pk_bwfdUN-1i4f1WTSMAXe-XVZes5T1nk6a',
+    install: {
+      framework: 'web',
+      agent: 'other',
+    },
+    requestBatching: false,
+  });
+</script>
 </head>
 <body>
 <nav>
