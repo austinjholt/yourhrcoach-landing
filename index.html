@@ -391,6 +391,15 @@ src="https://www.facebook.com/tr?id=1471431344275677&ev=PageView&noscript=1"
   .proof-meta strong { color: var(--charcoal); font-size: 15px; }
   .proof-avatar { width: 56px; height: 56px; object-fit: cover; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: var(--teal-pale); color: var(--teal-dark); font-weight: 700; font-size: 15px; }
   @media (max-width: 768px) { .proof { padding: 72px 20px; } .proof-card { padding: 28px 22px; } }
+  /* FIRST-WEEK SAVINGS MATH */
+  .week-math { margin: 48px auto 0; max-width: 620px; background: #fffdf5; border: 1px solid rgba(201,168,76,0.35); border-radius: 16px; padding: 32px 36px; text-align: left; }
+  .week-math h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: var(--charcoal); margin: 0 0 18px; text-align: center; }
+  .week-math .wm-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px dashed rgba(201,168,76,0.45); font-size: 15px; color: var(--mid); line-height: 1.5; margin: 0; }
+  .week-math .wm-row strong { color: var(--charcoal); font-size: 16px; white-space: nowrap; }
+  .week-math .wm-total { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-top: 16px; font-size: 16px; font-weight: 600; color: var(--teal-dark); margin: 0; }
+  .week-math .wm-total strong { font-family: 'Cormorant Garamond', serif; font-size: 34px; color: var(--teal-dark); white-space: nowrap; }
+  .week-math .wm-foot { font-size: 12.5px; color: var(--light); line-height: 1.55; margin: 14px 0 0; }
+  @media (max-width: 768px) { .week-math { padding: 24px 20px; } .week-math .wm-total strong { font-size: 28px; } }
   .pricing { padding: 100px 40px; background: white; }
   .pricing-inner { max-width: 800px; margin: 0 auto; }
   .pricing-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
@@ -742,6 +751,13 @@ src="https://www.facebook.com/tr?id=1471431344275677&ev=PageView&noscript=1"
       </div>
     </div>
     <p class="pricing-note">7-day free trial on all plans · Secure payment via Stripe · Cancel anytime · Have a coupon? Enter it at checkout.<br><a href="/pricing" style="color:var(--teal-dark);font-weight:600;">Full pricing details and how it compares to consultants and PEOs →</a></p>
+    <div class="week-math fade-up" id="first-week">
+      <h3>What a Typical First Week Looks Like</h3>
+      <p class="wm-row"><span>10 HR questions answered (~$50 each in consulting time)</span><strong>$500</strong></p>
+      <p class="wm-row"><span>3 documents drafted &mdash; a write-up, a policy, an offer letter (~$350 each)</span><strong>$1,050</strong></p>
+      <p class="wm-total"><span>Consulting fees you didn&rsquo;t pay &mdash; during your 7-day free trial</span><strong>~$1,550</strong></p>
+      <p class="wm-foot">Estimates use the same values as the savings counter in your account: $50 per question answered and $350 per document drafted. Traditional HR consultants bill $150&ndash;300 an hour.</p>
+    </div>
   </div>
 </section>
 
