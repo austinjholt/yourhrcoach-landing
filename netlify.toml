@@ -224,3 +224,18 @@
   to = "/?utm_source=heycatch&utm_campaign=9"
   status = 302
   force = true
+
+# Partner referral links. ref.js stores the code and passes it into app.yourhrcoach.ai signups.
+# Generic: yourhrcoach.ai/go/<code>  (e.g. /go/emerson-acme for a per-client link that still credits Emerson)
+[[redirects]]
+  from = "/go/:code"
+  to = "/?ref=:code"
+  status = 302
+  force = true
+
+# Emerson & Co. (Tim Emerson, ASO referral partner)
+[[redirects]]
+  from = "/emerson"
+  to = "/?ref=emerson"
+  status = 302
+  force = true
