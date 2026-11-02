@@ -1,10 +1,10 @@
 # YourHRCoach.ai
 
-> AI-Powered HR Guidance for Small Business — built on Dr. Steve Cohen's 40+ years of HR consulting expertise.
+> AI-Powered HR Toolkit for Small Businesses and HR Consultants — handle HR questions, documents, and employee issues in one place. Built on Dr. Steve Cohen's 40+ years of HR consulting expertise.
 
 ## What is YourHRCoach.ai?
 
-YourHRCoach.ai is an AI HR coaching platform designed for small business owners who need expert HR guidance without the cost of a full-time HR department or expensive retainer-based consulting. Every answer draws from Dr. Steve Cohen's 40+ years of real-world HR experience.
+YourHRCoach.ai is an AI-powered HR toolkit for small business owners — and the HR consultants who support them — who need expert HR guidance without the cost of a full-time HR department or expensive retainer-based consulting. Every answer draws from Dr. Steve Cohen's 40+ years of real-world HR experience.
 
 ## Core Features
 
@@ -13,10 +13,10 @@ YourHRCoach.ai is an AI HR coaching platform designed for small business owners 
 - **Upload & Review Documents**: Upload existing HR documents for expert feedback, rewrites, and improvements.
 - **Case Tracker**: Complaints, investigations, and discipline matters with a dated timeline; the coach reads the case file and suggests next steps.
 - **State-Specific Answers, Checked Live**: Answers are tailored to the user's state, company size, and W-2/1099 workers; state questions are checked against official government sources (with links), backed by a 50-state employment law library.
-- **Guided Template Library**: HR Health Check, Culture Survey, Exit Interview, PIP, Termination Risk Checklist, Workplace Investigation Kit, Onboarding Checklist, Interview Scorecard.
+- **8 Guided HR Templates**: HR Health Check, Culture Survey, Exit Interview, PIP, Termination Risk Checklist, Workplace Investigation Kit, Onboarding Checklist, Interview Scorecard.
 - **Monthly Law Update Email**: What changed in the user's state(s) and federal employment law, and what to do.
 - **Client Workspaces (Consultant plan)**: HR consultants keep each client separate, with answers, templates, and cases tailored per client.
-- **Conversation History**: All conversations saved and searchable.
+- **Conversation History**: Conversations are saved so you can pick up where you left off.
 - **Private & Secure**: Conversations are private to each account.
 
 ## Pricing
