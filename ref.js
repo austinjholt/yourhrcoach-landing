@@ -9,7 +9,9 @@
 // Partner pages are noindex (meta tag here + X-Robots-Tag header in netlify.toml) so they are
 // reachable by direct link only. The app shows the same logo on its sign-in screen.
 var YHC_PARTNERS = {
-  emerson:       { name: 'Emerson & Company', logo: '/images/partners/emerson.png' },
+  // offer: optional discount line shown on the partner page; the app applies the matching Stripe
+  // coupon at checkout (yourhrcoach repo, netlify/functions/lib/partner-offers.js). Keep the two in sync.
+  emerson:       { name: 'Emerson & Company', logo: '/images/partners/emerson.png', offer: 'Emerson clients save 10% for life.' },
   readyaimclimb: { name: 'Ready Aim Climb',   logo: '/images/partners/readyaimclimb.png' }
 };
 // Vanity paths that serve the homepage co-branded (keep in sync with netlify.toml)
@@ -79,6 +81,7 @@ var YHC_PARTNER_PATHS = { '/emerson': 'emerson', '/readyaimclimb': 'readyaimclim
       '.yhc-partner-strip .yhc-strip-logo.yhc-pm-text{font-size:17px}' +
       '.yhc-strip-text{font-size:13.5px;color:#4a5568;line-height:1.4;border-left:1px solid #e2e8f0;padding-left:14px}' +
       '.yhc-strip-text strong{color:#357a52}' +
+      '.yhc-strip-offer{display:inline-block;margin-top:4px;font-weight:700;color:#357a52}' +
       '@media (max-width:768px){.yhc-nav-x,.yhc-nav-partner{display:none}.yhc-partner-strip{flex-direction:column;align-items:flex-start;gap:8px}.yhc-strip-text{border-left:0;padding-left:0}}';
     document.head.appendChild(css);
 
@@ -98,6 +101,7 @@ var YHC_PARTNER_PATHS = { '/emerson': 'emerson', '/readyaimclimb': 'readyaimclim
       var t = document.createElement('div'); t.className = 'yhc-strip-text';
       t.innerHTML = 'Brought to you by <strong></strong>, in partnership with Your HR Coach.';
       t.querySelector('strong').textContent = p.name;
+      if (p.offer) { var o = document.createElement('span'); o.className = 'yhc-strip-offer'; o.textContent = p.offer; t.appendChild(document.createElement('br')); t.appendChild(o); }
       strip.appendChild(t);
       hero.insertBefore(strip, hero.firstChild);
     }
