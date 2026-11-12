@@ -11,11 +11,14 @@ YourHRCoach.ai is an AI-powered HR toolkit for small business owners — and the
 - **Instant HR Answers 24/7**: Ask any HR question — terminations, harassment complaints, performance issues, onboarding — and get expert guidance instantly.
 - **Document Generation**: Create termination letters, written warnings, job descriptions, offer letters, HR policies, and performance reviews — downloadable as Word documents.
 - **Upload & Review Documents**: Upload existing HR documents for expert feedback, rewrites, and improvements.
-- **Case Tracker**: Complaints, investigations, and discipline matters with a dated timeline; the coach reads the case file and suggests next steps.
+- **Case Tracker**: Complaints, investigations, and discipline matters with a dated timeline; the coach reads the case file and suggests next steps. Entries lock 24 hours after logging (corrections are appended), and the full case file exports as Word, PDF, or CSV for lawyers and insurers.
+- **Email Reminders**: Ask the coach to set one-time or repeating reminders (review dates, deadlines, follow-ups); they arrive by email.
+- **Weekly HR Summary**: Monday email with open cases, upcoming reminders, and priorities; one-click off.
+- **My Documents & Client Folders**: Every generated document is saved and searchable; consultants get a folder per client with documents, past conversations, and cases.
 - **State-Specific Answers, Checked Live**: Answers are tailored to the user's state, company size, and W-2/1099 workers; state questions are checked against official government sources (with links), backed by a 50-state employment law library.
 - **8 Guided HR Templates**: HR Health Check, Culture Survey, Exit Interview, PIP, Termination Risk Checklist, Workplace Investigation Kit, Onboarding Checklist, Interview Scorecard.
 - **Monthly Law Update Email**: What changed in the user's state(s) and federal employment law, and what to do.
-- **Client Workspaces (Consultant plan)**: HR consultants keep each client separate, with answers, templates, and cases tailored per client.
+- **Client Workspaces (Consultant plan)**: HR consultants keep each client separate, with answers, templates, and cases tailored per client; firm logo on case exports.
 - **Conversation History**: Conversations are saved so you can pick up where you left off.
 - **Private & Secure**: Conversations are private to each account.
 
